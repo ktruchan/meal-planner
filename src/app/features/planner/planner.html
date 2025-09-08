@@ -1,0 +1,29 @@
+<section class="planner">
+  <div class="grid">
+    <div class="head"></div>
+    @for (s of slots; track s) { <div class="head">{{ s }}</div> }
+
+    @for (day of days; track day) {
+      <div class="day">{{ day }}</div>
+      @for (slot of slots; track slot) {
+        <button matButton="elevated">
+                    @if (hasRecipe(day, slot)) {
+          <!--            {{ getRecipeName(plan()[day][slot]) }}-->
+                    } @else {
+                      <span class="muted">-</span>
+                    }
+        </button>
+      }
+    }
+  </div>
+
+<!--  <aside class="picker">-->
+<!--    <input placeholder="Szukaj przepisu…" (input)="onSearch($event)" />-->
+<!--    <button (click)="assignSelected(undefined)">Wyczyść slot</button>-->
+<!--    <ul>-->
+<!--      @for (r of filteredRecipes(); track r.id) {-->
+<!--        <li><button (click)="assignSelected(r.id)">{{ r.name }}</button></li>-->
+<!--      }-->
+<!--    </ul>-->
+<!--  </aside>-->
+</section>

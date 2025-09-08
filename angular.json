@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meal-planner": {
+    "meal-planner-final": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "meal-planner:build:production"
+              "buildTarget": "meal-planner-final:build:production"
             },
             "development": {
-              "buildTarget": "meal-planner:build:development"
+              "buildTarget": "meal-planner-final:build:development"
             }
           },
           "defaultConfiguration": "development"

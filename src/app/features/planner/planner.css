@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: 160px repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.head {
+  font-weight: 700;
+}
+
+.day {
+  font-weight: 600;
+}
+
+.cell {
+  min-height: 3rem;
+  text-align: left;
+}
+
+.cell.selected {
+  outline: 2px solid #6366f1;
+}
+
+.picker {
+  margin-top: 1rem;
+  max-width: 520px;
+}
+
+.muted {
+  color: #64748b;
+}
+
+/*# sourceMappingURL=planner.css.map */
